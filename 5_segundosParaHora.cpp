@@ -1,11 +1,13 @@
 #include<iostream>
 using namespace std;
 int main (){
-    float horasEvento;
+    int evento,horas,minutos,segundos;
     cout << "Duracao do evento Em segundos: ";
-    cin >> horasEvento;
-    cout << "Minutos: ";
-    cout << (horasEvento/60)<< endl;
-    cout << "Horas: ";
-    cout << (horasEvento/60)/60;
+    cin >> evento;
+    horas = evento/3600;
+    minutos = (evento%3600)/60;
+    segundos = (evento%3600)%60;
+    cout << "horas" << horas << "minutos" << minutos << "segundos" << segundos;
+    
+    
 }
